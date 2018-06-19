@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_msg">
+
+    <fragment
+        android:id="@id/nav_contact"
+        android:name="com.ce.cechat.view.fragment.main.ContactFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact">
+
+        <action
+            android:id="@id/action_nav_contact_to_nav_search"
+            app:destination="@id/nav_search" />
+        <action
+            android:id="@id/action_nav_contact_to_nav_invite"
+            app:destination="@id/nav_invite" />
+        <action
+            android:id="@id/action_nav_contact_to_nav_group_list"
+            app:destination="@id/nav_group_list" />
+
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_msg"
+        android:name="com.ce.cechat.view.fragment.main.MsgFragment"
+        android:label="@string/message"
+        tools:layout="@layout/fragment_msg">
+        <action
+            android:id="@+id/action_nav_msg_to_nav_chat"
+            app:destination="@id/nav_chat" />
+    </fragment>
+
+    <activity
+        android:id="@id/nav_chat"
+        android:name="com.ce.cechat.view.activity.ChatActivity"
+        android:label="@string/chat"
+        tools:layout="@layout/activity_chat">
+
+    </activity>
+
+    <fragment
+        android:id="@id/nav_setting"
+        android:name="com.ce.cechat.view.fragment.main.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting">
+
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_search"
+        android:name="com.ce.cechat.view.fragment.main.SearchFragment"
+        android:label="@string/add_friend"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@id/action_nav_search_to_nav_contact"
+            app:destination="@id/nav_contact" />
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_invite"
+        android:name="com.ce.cechat.view.fragment.main.InviteFragment"
+        android:label="@string/friend_notify"
+        tools:layout="@layout/fragment_invite">
+
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_group_list"
+        android:name="com.ce.cechat.view.fragment.main.GroupListFragment"
+        android:label="@string/group_list"
+        tools:layout="@layout/ease_fragment_group_list">
+        <action
+            android:id="@id/action_nav_group_list_to_nav_create_group"
+            app:destination="@id/nav_create_group" />
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_create_group"
+        android:name="com.ce.cechat.view.fragment.main.CreateGroupFragment"
+        android:label="@string/create_group_chat"
+        tools:layout="@layout/fragment_create_group">
+        <action
+            android:id="@id/action_nav_create_group_to_nav_select_contact"
+            app:destination="@id/nav_select_contact" />
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_select_contact"
+        android:name="com.ce.cechat.view.fragment.main.SelectContactFragment"
+        android:label="@string/invite_friend"
+        tools:layout="@layout/fragment_select_contact">
+
+    </fragment>
+
+</navigation>

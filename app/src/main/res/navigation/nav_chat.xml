@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/nav_chat">
+
+    <fragment
+        android:id="@id/nav_chat"
+        android:name="com.ce.cechat.view.fragment.chat.ChatFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/ease_fragment_chat">
+        <action android:id="@id/action_nav_chat_to_nav_group_detail" app:destination="@id/nav_group_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_group_detail"
+        android:name="com.ce.cechat.view.fragment.chat.GroupDetailFragment"
+        android:label="@string/group_detail"
+        tools:layout="@layout/fragment_group_detail">
+        <action android:id="@id/action_nav_group_detail_to_nav_select_contact" app:destination="@id/nav_select_contact"/>
+        <action android:id="@id/action_nav_group_detail_to_nav_edit_group_member" app:destination="@id/nav_edit_group"/>
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_select_contact"
+        android:name="com.ce.cechat.view.fragment.main.SelectContactFragment"
+        android:label="@string/invite_friend"
+        tools:layout="@layout/fragment_select_contact">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@id/nav_edit_group"
+        android:name="com.ce.cechat.view.fragment.chat.EditGroupFragment"
+        android:label="@string/edit_group_member"
+        tools:layout="@layout/fragment_group_item_list">
+
+    </fragment>
+
+</navigation>

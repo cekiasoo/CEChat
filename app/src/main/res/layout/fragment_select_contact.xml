@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.main.SelectContactFragment">
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleBarBackground="@color/colorPrimary"
+        app:titleBarRightImage="@drawable/ic_done_black_24dp"
+        app:titleBarTitle="@string/invite_friend">
+
+    </com.hyphenate.easeui.widget.EaseTitleBar>
+
+
+    <ListView
+        android:id="@+id/lv_contacts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:choiceMode="multipleChoice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"
+        app:layout_constraintEnd_toStartOf="@id/sidebar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scrollbars="none">
+
+    </ListView>
+
+    <com.hyphenate.easeui.widget.EaseSidebar
+        android:id="@+id/sidebar"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"
+        app:layout_constraintStart_toEndOf="@id/lv_contacts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/floating_header"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_floating_header_bg"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.fragment.chat.GroupDetailFragment">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_group_detail_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_header_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_group_detail_header_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hyphenate.easeui.widget.EaseTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/iv_group_detail_header"
+            app:titleBarBackground="#00000000"
+            app:titleBarLeftImage="@drawable/ic_navigate_before_black_24dp"
+            app:titleBarRightImage="@drawable/ic_more_vert_white_24dp">
+
+        </com.hyphenate.easeui.widget.EaseTitleBar>
+
+        <TextView
+            android:id="@+id/tv_group_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_white"
+            app:layout_constraintBottom_toBottomOf="@id/iv_group_detail_header"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_white"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_group_id"
+            app:layout_constraintStart_toStartOf="@id/tv_group_id" />
+
+        <TextView
+            android:id="@+id/tv_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/group_members"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_group_detail_header" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/edit"
+            android:textColor="@drawable/ic_sign_up_text"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tv_member"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_member" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_member"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_member">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

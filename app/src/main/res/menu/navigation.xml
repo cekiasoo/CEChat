@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/nav_msg"
+        android:icon="@drawable/ic_record_voice_over_black_24dp"
+        android:title="@string/message" />
+
+    <item
+        android:id="@id/nav_contact"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="@string/contact" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_toys_black_24dp"
+        android:title="@string/news" />
+
+</menu>

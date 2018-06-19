@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcome">30sp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="nav_header_height">206dp</dimen>
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="add_new_friend">16sp</dimen>
+    <dimen name="add_friend">20sp</dimen>
+    <dimen name="search">16sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="menu_about_title_text_size">20sp</dimen>
+    <dimen name="menu_about_message_text_size">17sp</dimen>
+
+</resources>

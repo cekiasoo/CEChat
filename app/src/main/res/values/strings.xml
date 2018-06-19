@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">发 料</string>
+    <string name="title_activity_login">登录</string>
+
+    <string name="prompt_number">账号</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_confirm_password">确认密码</string>
+    <string name="action_login">登录</string>
+    <string name="action_sign_up">注册</string>
+    <string name="action_sign_up_short">Sign in</string>
+    <string name="error_invalid_user_id">无效的账号</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_invalid_confirm_password">两次密码不一致</string>
+    <string name="error_empty_password">密码还没填呢</string>
+    <string name="error_empty_confirm_password">确认密码还没填呢</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_empty_user_id_required">账号还没填呢</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="new_user_sign_up">新用户注册</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sign_up_success">注册成功</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="contact">联系人</string>
+    <string name="message">消息</string>
+    <string name="settings">设置</string>
+    <string name="logout_current_account">退出当前账号</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="confirm_logout_current_account">确定要退出当前账号？</string>
+    <string name="confirm_logout">确定退出</string>
+    <string name="cancels">取消</string>
+
+    <string name="unknow_error">未知错误</string>
+    <string name="user_authentication_failed">用户id或密码错误</string>
+    <string name="server_busy">服务器繁忙</string>
+    <string name="server_unknown_error">未知的server异常</string>
+    <string name="user_not_found">不存在此用户</string>
+    <string name="add_new_friend">添加好友</string>
+    <string name="new_friend">新朋友</string>
+    <string name="new_msg">新消息</string>
+    <string name="enter_group_chat">群聊</string>
+    <string name="add">添加</string>
+    <string name="user_id_cannot_null">用户名不能为空</string>
+    <string name="username">用户名</string>
+    <string name="add_new_friend_success">添加 %s 好友请求发送成功</string>
+    <string name="add_new_friend_reason">添加好友的原因</string>
+    <string name="friend_notify">好友通知</string>
+    <string name="contact_msg_name">名称</string>
+    <string name="contact_msg_reason">理由</string>
+    <string name="contact_msg_accept">同意</string>
+    <string name="contact_msg_refuse">拒绝</string>
+    <string name="request_you_make_friend">请求添加你为好友</string>
+    <string name="accept_request">同意了该好友请求</string>
+    <string name="accept_request_by_peer">对方同意了你的添加好友请求</string>
+    <string name="profile">详细资料</string>
+    <string name="send_msg">发消息</string>
+    <string name="more">更多</string>
+    <string name="server_not_reachable">无法访问到服务器</string>
+    <string name="delete_contact_success">删除 %s 成功</string>
+    <string name="delete_contact">删除联系人</string>
+    <string name="will_delete_contact">将联系人 %s 删除</string>
+    <string name="confirm_delete">确定删除</string>
+    <string name="group_list">群列表</string>
+    <string name="create_group_chat">创建群聊</string>
+    <string name="dont_check">不验证</string>
+    <string name="check">验证</string>
+    <string name="submit">提交</string>
+    <string name="add_group_need_check">加群是否验证</string>
+    <string name="public_group">公开</string>
+    <string name="unpublic_group">非公开</string>
+    <string name="is_public">是否公开</string>
+    <string name="group_description">群简介（1 ~ 30 个字）</string>
+    <string name="create_group_name">群名称（1 ~ 10 个字）</string>
+    <string name="create_group_reason">建群的理由（1 ~ 20 个字）</string>
+    <string name="error_empty_group_name">群名称还没填呢</string>
+    <string name="error_empty_group_description">群简介还没填呢</string>
+    <string name="error_empty_group_reason">建群理由还没填呢</string>
+    <string name="create_group_success">创建群 %s 成功</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="direct_submit">直接提交</string>
+    <string name="news">动态</string>
+    <string name="destroy_group">解散群</string>
+    <string name="confirm_destroy_group">确定要解散当前这个群</string>
+    <string name="confirm_destroy">确定解散</string>
+    <string name="leave_group">退出群</string>
+    <string name="confirm_leave_group">确定要退出当前这个群</string>
+    <string name="confirm_leave">确定退出</string>
+    <string name="reason_of_refuse">拒绝的理由</string>
+    <string name="refuse_reason">拒绝理由</string>
+    <string name="edit">编辑</string>
+    <string name="group_members">群聊成员</string>
+    <string name="send_invite_contact_in_group">已向好友发出进群邀请</string>
+    <string name="reason_of_invite">邀请的理由</string>
+    <string name="invite_reason">邀请理由</string>
+    <string name="accept_invite_in_group">同意了 %s 邀请进 %s 群</string>
+    <string name="accept_application_in_group">同意了 %s 进 %s 群的申请</string>
+    <string name="refuse_invite_in_group">拒绝了 %s 邀请进 %s 群</string>
+    <string name="refuse_application_in_group">拒绝了 %s 邀请进 %s 群</string>
+    <string name="group_detail">群资料</string>
+    <string name="chat">聊天</string>
+    <string name="edit_group_member">编辑群成员</string>
+    <string name="set_admin">设为管理员</string>
+    <string name="cancel_admin">取消管理员</string>
+    <string name="delete_group_member">删除群成员</string>
+    <string name="confirm_delete_member">确定删除 %s</string>
+    <string name="confirm_cancel_admin">确定取消 %s 的管理员身份</string>
+    <string name="confirm_cancel">确定</string>
+    <string name="confirm_set">确定设置</string>
+    <string name="confirm_set_admin">确定设 %s 为管理员？</string>
+    <string name="about">关于</string>
+    <string name="share">分享</string>
+    <string name="social">社交</string>
+    <string name="exit_current_account">退出当前账号</string>
+    <string name="about_title">关于 发料</string>
+    <string name="version">版本. 1.0</string>
+    <string name="copyright">Copyright © 2018 CE 版权所有</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/lay_add_new_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/ic_contact_head_item_bg"
+        android:layout_margin="10dp">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_notifications_blue_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/add_new_friend"
+            android:text="@string/new_msg"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_invite_red_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_notification_overlay"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_group_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lay_add_new_msg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/ic_contact_head_item_bg"
+        android:layout_margin="10dp">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_group_chat_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/add_new_friend"
+            android:text="@string/enter_group_chat"/>
+    </LinearLayout>
+
+
+
+    
+</android.support.constraint.ConstraintLayout>

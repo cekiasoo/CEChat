@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //navigation
+
+    //login
+    <item name="nav_login" type="id" />
+    <item name="nav_sign_up" type="id" />
+
+    //action
+    <item name="action_nav_login_to_nav_sign_up" type="id" />
+    <item name="action_nav_sign_up_to_nav_login" type="id" />
+
+    //main
+    <item name="nav_contact" type="id" />
+    <item name="nav_msg" type="id" />
+    <item name="nav_setting" type="id" />
+    <item name="nav_search" type="id" />
+    <item name="nav_invite" type="id" />
+    <item name="nav_group_list" type="id" />
+    <item name="nav_create_group" type="id" />
+    <item name="nav_select_contact" type="id" />
+
+
+    //action
+    <item name="action_nav_search_to_nav_contact" type="id" />
+    <item name="action_nav_contact_to_nav_search" type="id" />
+    <item name="action_nav_contact_to_nav_invite" type="id" />
+    <item name="action_nav_contact_to_nav_group_list" type="id" />
+    <item name="action_nav_group_list_to_nav_create_group" type="id" />
+    <item name="action_nav_create_group_to_nav_select_contact" type="id" />
+
+    //detail
+    <item name="nav_detail" type="id" />
+
+    //chat
+    <item name="nav_chat" type="id" />
+    <item name="nav_group_detail" type="id" />
+    <item name="nav_edit_group" type="id" />
+
+    //action
+    <item name="action_nav_chat_to_nav_group_detail" type="id" />
+    <item name="action_nav_group_detail_to_nav_edit_group_member" type="id" />
+    <item name="action_nav_group_detail_to_nav_select_contact" type="id" />
+
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_head"
+        app:srcCompat="@drawable/ic_delete_round_red_24dp"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_delete"
+        app:layout_constraintEnd_toStartOf="@id/tv_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_account_circle_48px"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_head"
+        app:layout_constraintTop_toTopOf="@id/iv_delete"
+        app:layout_constraintBottom_toBottomOf="@id/iv_delete"
+        app:layout_constraintEnd_toStartOf="@id/tv_admin"
+        android:singleLine="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:layout_margin="@dimen/text_margin"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="名称"/>
+
+    <TextView
+        android:id="@+id/tv_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_delete"
+        app:layout_constraintBottom_toBottomOf="@id/iv_delete"
+        android:textColor="@drawable/ic_sign_up_text"
+        android:text="@string/set_admin"/>
+
+</android.support.constraint.ConstraintLayout>

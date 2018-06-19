@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="color_login_btn_bg_pressed">#00796B</color>
+    <color name="color_login_btn_bg_normal">#009688</color>
+    <color name="color_logout_btn_bg_pressed">#D32F2F</color>
+    <color name="color_logout_btn_bg_normal">#F44336</color>
+    <color name="color_add_friend_btn_bg_normal">#03A9F4</color>
+    <color name="color_add_friend_btn_bg_pressed">#0288D1</color>
+    <color name="color_login_btn_text">#FFFFFF</color>
+    <color name="color_sign_up_text_normal">#03A9F4</color>
+    <color name="color_sign_up_text_pressed">#0288D1</color>
+    <color name="color_title_text">#FFFFFF</color>
+    <color name="color_logout_text">#FFFFFF</color>
+    <color name="contact_head_item_bg_normal">#FFFFFF</color>
+    <color name="contact_head_item_bg_pressed">#e6e6e6</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_search_text_pressed">#BDBDBD</color>
+
+    <color name="color_red_btn_bg_pressed">#D32F2F</color>
+    <color name="color_red_btn_bg_normal">#F44336</color>
+
+    <color name="color_blue_btn_bg_normal">#03A9F4</color>
+    <color name="color_blue_btn_bg_pressed">#0288D1</color>
+
+    <color name="color_floating_header">#BB787878</color>
+
+    <color name="color_background">#FFEBEBEB</color>
+    <color name="colorDefaultMenu">#929699</color>
+
+    <color name="color_gray_menu_item_bg_pressed">#d6d6d6</color>
+    <color name="color_gray_menu_item_bg_normal">#FFFFFF</color>
+
+</resources>
