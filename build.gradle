@@ -17,6 +17,8 @@ buildscript {
 
         // Google Firebase cloud messaging
 //        classpath 'com.google.gms:google-services:4.0.1'
+
+        classpath 'com.mob.sdk:MobSDK:+'
     }
 }
 

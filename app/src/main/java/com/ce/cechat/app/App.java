@@ -8,6 +8,7 @@ import com.ce.cechat.model.thread.ThreadPools;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.EaseUI;
+import com.mob.MobSDK;
 import com.squareup.leakcanary.LeakCanary;
 import com.tencent.bugly.crashreport.CrashReport;
 
@@ -35,6 +36,8 @@ public class App extends Application {
         initDb();
 
         initEventListener();
+
+        initShareSDK();
 
     }
 
@@ -102,5 +105,12 @@ public class App extends Application {
 
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
         EMClient.getInstance().setDebugMode(true);
+    }
+
+    /**
+     * 初始化 ShareSDK
+     */
+    private void initShareSDK() {
+        MobSDK.init(this);
     }
 }
