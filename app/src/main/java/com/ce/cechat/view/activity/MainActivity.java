@@ -31,6 +31,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.jiguang.analytics.android.api.JAnalyticsInterface;
 import cn.sharesdk.onekeyshare.OnekeyShare;
 
 /**
@@ -82,6 +83,18 @@ public class MainActivity extends AppCompatActivity
         mHeadLayout = navView.inflateHeaderView(R.layout.nav_header_main);
         mTvNickName = mHeadLayout.findViewById(R.id.tv_nickname);
         mMainPresenter.setName();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        JAnalyticsInterface.onPageStart(this, TAG);
+    }
+
+    @Override
+    protected void onStop() {
+        JAnalyticsInterface.onPageEnd(this, TAG);
+        super.onStop();
     }
 
     private void setupNavigationMenu(NavController navController) {

@@ -64,6 +64,12 @@
             </intent-filter>
         </receiver>
 
+        <!-- 极光推送 -->
+        <service android:name="cn.jpush.android.service.PushService"
+            android:process=":multiprocess"
+            tools:node="replace" >
+        </service>
+
         <activity
             android:name=".view.activity.SplashActivity"
             android:screenOrientation="portrait"

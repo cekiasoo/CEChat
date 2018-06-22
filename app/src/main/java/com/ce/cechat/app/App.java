@@ -12,6 +12,9 @@ import com.mob.MobSDK;
 import com.squareup.leakcanary.LeakCanary;
 import com.tencent.bugly.crashreport.CrashReport;
 
+import cn.jiguang.analytics.android.api.JAnalyticsInterface;
+import cn.jpush.android.api.JPushInterface;
+
 /**
  * @author CE Chen
  */
@@ -38,6 +41,10 @@ public class App extends Application {
         initEventListener();
 
         initShareSDK();
+
+        initJpush();
+
+        initJAnalytics();
 
     }
 
@@ -112,5 +119,22 @@ public class App extends Application {
      */
     private void initShareSDK() {
         MobSDK.init(this);
+    }
+
+    /**
+     * 初始化极光推送
+     */
+    private void initJpush() {
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
+    }
+
+    /**
+     * 初始化极光统计
+     */
+    private void initJAnalytics() {
+        JAnalyticsInterface.setDebugMode(true);
+        JAnalyticsInterface.initCrashHandler(this);
+        JAnalyticsInterface.init(this);
     }
 }
