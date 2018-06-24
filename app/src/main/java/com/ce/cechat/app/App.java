@@ -3,9 +3,7 @@ package com.ce.cechat.app;
 import android.app.Application;
 
 import com.ce.cechat.model.biz.DbBiz;
-import com.ce.cechat.model.biz.EventListener;
 import com.ce.cechat.model.thread.ThreadPools;
-import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.EaseUI;
 import com.mob.MobSDK;
@@ -38,8 +36,6 @@ public class App extends Application {
 
         initDb();
 
-        initEventListener();
-
         initShareSDK();
 
         initJpush();
@@ -57,13 +53,6 @@ public class App extends Application {
      */
     private void initCrashReport() {
         CrashReport.initCrashReport(getApplicationContext(), "2a4707ceb9", true);
-    }
-
-    /**
-     * 初始化消息的监听
-     */
-    private void initEventListener() {
-        new EventListener(getApplicationContext());
     }
 
     /**
@@ -111,7 +100,7 @@ public class App extends Application {
 //        EMClient.getInstance().init(this, options);
 
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
-        EMClient.getInstance().setDebugMode(true);
+//        EMClient.getInstance().setDebugMode(false);
     }
 
     /**
@@ -125,7 +114,7 @@ public class App extends Application {
      * 初始化极光推送
      */
     private void initJpush() {
-        JPushInterface.setDebugMode(true);
+        JPushInterface.setDebugMode(false);
         JPushInterface.init(this);
     }
 
@@ -133,7 +122,7 @@ public class App extends Application {
      * 初始化极光统计
      */
     private void initJAnalytics() {
-        JAnalyticsInterface.setDebugMode(true);
+        JAnalyticsInterface.setDebugMode(false);
         JAnalyticsInterface.initCrashHandler(this);
         JAnalyticsInterface.init(this);
     }

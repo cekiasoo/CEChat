@@ -1,6 +1,7 @@
 package com.ce.cechat.model.biz;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -31,6 +32,8 @@ import java.util.List;
  */
 public class EventListener {
 
+    private volatile static EventListener sEventListener;
+
     private Context mContext;
 
     public static final String CONTACT_CHANGED = "CONTACT_CHANGED";
@@ -43,10 +46,25 @@ public class EventListener {
 
     private static final String TAG = "EventListener";
 
-    public EventListener(Context pContext) {
+    private EventListener(Context pContext) {
         this.mContext = pContext;
         EMClient.getInstance().contactManager().setContactListener(new ChatEmContactListener());
         EMClient.getInstance().groupManager().addGroupChangeListener(new ChatEmGroupChangeListener());
+    }
+
+    public static EventListener getInstance(@NonNull Context pContext) {
+        if (sEventListener == null) {
+            synchronized (EventListener.class) {
+                if (sEventListener == null) {
+                    sEventListener = new EventListener(pContext);
+                }
+            }
+        }
+        return sEventListener;
+    }
+
+    public void release() {
+        sEventListener = null;
     }
 
     private class ChatEmGroupChangeListener implements EMGroupChangeListener {

@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ce.cechat.R;
+import com.ce.cechat.model.biz.EventListener;
 import com.ce.cechat.presenter.MainPresenter;
 import com.ce.cechat.utils.ErrorCode;
 import com.ce.cechat.view.fragment.base.BaseFragment;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity
 
         mMainPresenter = new MainPresenter(this);
         mMainPresenter.initDb();
+        EventListener.getInstance(getApplication());
         navFragMain = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_frag_main);
         NavController navController = navFragMain.getNavController();
         setupNavigationMenu(navController);
@@ -197,6 +199,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void logoutSuccess() {
+        EventListener.getInstance(getApplication()).release();
         toLoginPage();
     }
 
