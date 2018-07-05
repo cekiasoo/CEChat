@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@id/nav_chat"
-        android:name="com.ce.cechat.view.fragment.chat.ChatFragment"
+        android:name="com.ce.cechat.ui.chat.ChatFragment"
         android:label="@string/chat"
         tools:layout="@layout/ease_fragment_chat">
         <action android:id="@id/action_nav_chat_to_nav_group_detail" app:destination="@id/nav_group_detail" />
@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@id/nav_group_detail"
-        android:name="com.ce.cechat.view.fragment.chat.GroupDetailFragment"
+        android:name="com.ce.cechat.ui.groupdetail.GroupDetailFragment"
         android:label="@string/group_detail"
         tools:layout="@layout/fragment_group_detail">
         <action android:id="@id/action_nav_group_detail_to_nav_select_contact" app:destination="@id/nav_select_contact"/>
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@id/nav_select_contact"
-        android:name="com.ce.cechat.view.fragment.main.SelectContactFragment"
+        android:name="com.ce.cechat.ui.selectcontact.SelectContactFragment"
         android:label="@string/invite_friend"
         tools:layout="@layout/fragment_select_contact">
 
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@id/nav_edit_group"
-        android:name="com.ce.cechat.view.fragment.chat.EditGroupFragment"
+        android:name="com.ce.cechat.ui.editgroup.EditGroupFragment"
         android:label="@string/edit_group_member"
         tools:layout="@layout/fragment_group_item_list">
 

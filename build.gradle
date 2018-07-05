@@ -22,6 +22,11 @@ buildscript {
     }
 }
 
+// Define versions in a single place
+ext {
+    daggerVersion = '2.11'
+}
+
 allprojects {
     repositories {
         google()

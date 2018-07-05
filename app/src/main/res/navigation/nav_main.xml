@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@id/nav_contact"
-        android:name="com.ce.cechat.view.fragment.main.ContactFragment"
+        android:name="com.ce.cechat.ui.contactlist.ContactFragment"
         android:label="@string/contact"
         tools:layout="@layout/fragment_contact">
 
@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@id/nav_msg"
-        android:name="com.ce.cechat.view.fragment.main.MsgFragment"
+        android:name="com.ce.cechat.ui.msg.MsgFragment"
         android:label="@string/message"
         tools:layout="@layout/fragment_msg">
         <action
@@ -34,7 +34,7 @@
 
     <activity
         android:id="@id/nav_chat"
-        android:name="com.ce.cechat.view.activity.ChatActivity"
+        android:name="com.ce.cechat.ui.chat.ChatActivity"
         android:label="@string/chat"
         tools:layout="@layout/activity_chat">
 
@@ -42,7 +42,7 @@
 
     <fragment
         android:id="@id/nav_setting"
-        android:name="com.ce.cechat.view.fragment.main.SettingFragment"
+        android:name="com.ce.cechat.ui.dynamic.SettingFragment"
         android:label="@string/setting"
         tools:layout="@layout/fragment_setting">
 
@@ -50,7 +50,7 @@
 
     <fragment
         android:id="@id/nav_search"
-        android:name="com.ce.cechat.view.fragment.main.SearchFragment"
+        android:name="com.ce.cechat.ui.addcontact.SearchFragment"
         android:label="@string/add_friend"
         tools:layout="@layout/fragment_search">
         <action
@@ -60,7 +60,7 @@
 
     <fragment
         android:id="@id/nav_invite"
-        android:name="com.ce.cechat.view.fragment.main.InviteFragment"
+        android:name="com.ce.cechat.ui.newmsg.InviteFragment"
         android:label="@string/friend_notify"
         tools:layout="@layout/fragment_invite">
 
@@ -68,7 +68,7 @@
 
     <fragment
         android:id="@id/nav_group_list"
-        android:name="com.ce.cechat.view.fragment.main.GroupListFragment"
+        android:name="com.ce.cechat.ui.grouplist.GroupListFragment"
         android:label="@string/group_list"
         tools:layout="@layout/ease_fragment_group_list">
         <action
@@ -78,7 +78,7 @@
 
     <fragment
         android:id="@id/nav_create_group"
-        android:name="com.ce.cechat.view.fragment.main.CreateGroupFragment"
+        android:name="com.ce.cechat.ui.creategroup.CreateGroupFragment"
         android:label="@string/create_group_chat"
         tools:layout="@layout/fragment_create_group">
         <action
@@ -88,7 +88,7 @@
 
     <fragment
         android:id="@id/nav_select_contact"
-        android:name="com.ce.cechat.view.fragment.main.SelectContactFragment"
+        android:name="com.ce.cechat.ui.selectcontact.SelectContactFragment"
         android:label="@string/invite_friend"
         tools:layout="@layout/fragment_select_contact">
 

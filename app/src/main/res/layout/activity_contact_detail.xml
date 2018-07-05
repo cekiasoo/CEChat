@@ -5,7 +5,7 @@
     android:id="@+id/lay_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.ContactDetailActivity">
+    tools:context=".ui.detail.ContactDetailActivity">
     <fragment
         android:id="@+id/nav_frag_detail"
         android:name="androidx.navigation.fragment.NavHostFragment"

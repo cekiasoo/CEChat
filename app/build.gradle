@@ -59,11 +59,11 @@ MobSDK {
                 callbackUri "http://www.sharesdk.cn"
                 shareByAppClient false
             }
-            Wechat {
+            /*Wechat {
                 appId "wx4868b35061f87885"
                 callbackUri "http://www.sharesdk.cn"
                 appSecret "64020361b8ec4c99936c0e3999a9f249"
-            }
+            }*/
             QQ {
                 appId "100371282"
                 appKey "aed9b0303e3ed1e27bae87c33761161d"
@@ -118,4 +118,12 @@ dependencies {
     implementation 'cn.jiguang.sdk:jpush:3.1.1'
     implementation 'cn.jiguang.sdk:jcore:1.1.9'
     implementation 'cn.jiguang.sdk:janalytics:1.1.1'
+
+    // Dagger dependencies
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
 }

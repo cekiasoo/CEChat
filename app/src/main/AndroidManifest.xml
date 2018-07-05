@@ -71,7 +71,7 @@
         </service>
 
         <activity
-            android:name=".view.activity.SplashActivity"
+            android:name=".ui.splash.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -81,21 +81,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.activity.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/LoginTheme" />
         <activity
-            android:name=".view.activity.MainActivity"
+            android:name=".ui.main.MainActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
             android:theme="@style/MainTheme"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name=".view.activity.ContactDetailActivity"
+            android:name=".ui.detail.ContactDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/DetailTheme"></activity>
         <activity
-            android:name=".view.activity.ChatActivity"
+            android:name=".ui.chat.ChatActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ChatTheme"></activity>
         <activity android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"></activity>

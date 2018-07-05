@@ -8,7 +8,7 @@
     <fragment
         android:id="@id/nav_login"
         android:label="label_nav_login"
-        android:name="com.ce.cechat.view.fragment.login.LoginFragment"
+        android:name="com.ce.cechat.ui.login.LoginFragment"
         tools:layout="@layout/fragment_login">
 
         <action
@@ -21,7 +21,7 @@
     <fragment
         android:id="@id/nav_sign_up"
         android:label="label_nav_sign_up"
-        android:name="com.ce.cechat.view.fragment.login.SignUpFragment"
+        android:name="com.ce.cechat.ui.login.SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@id/action_nav_sign_up_to_nav_login"

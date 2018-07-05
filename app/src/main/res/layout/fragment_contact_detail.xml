@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFEBEBEB"
-    tools:context=".view.fragment.detail.ContactDetailFragment">
+    tools:context=".ui.detail.ContactDetailFragment">
 
     <com.hyphenate.easeui.widget.EaseTitleBar
         android:id="@+id/title_bar"

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@id/nav_detail"
-        android:name="com.ce.cechat.view.fragment.detail.ContactDetailFragment"
+        android:name="com.ce.cechat.ui.detail.ContactDetailFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_contact_detail">
         <action
@@ -16,7 +16,7 @@
 
     <activity
         android:id="@id/nav_chat"
-        android:name="com.ce.cechat.view.activity.ChatActivity"
+        android:name="com.ce.cechat.ui.chat.ChatActivity"
         android:label="@string/chat"
         tools:layout="@layout/activity_chat">
 

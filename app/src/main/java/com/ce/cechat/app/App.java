@@ -1,9 +1,8 @@
 package com.ce.cechat.app;
 
-import android.app.Application;
-
-import com.ce.cechat.model.biz.DbBiz;
-import com.ce.cechat.model.thread.ThreadPools;
+import com.ce.cechat.di.DaggerAppComponent;
+import com.ce.cechat.data.biz.DbBiz;
+import com.ce.cechat.utils.ThreadPools;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.EaseUI;
 import com.mob.MobSDK;
@@ -12,11 +11,13 @@ import com.tencent.bugly.crashreport.CrashReport;
 
 import cn.jiguang.analytics.android.api.JAnalyticsInterface;
 import cn.jpush.android.api.JPushInterface;
+import dagger.android.AndroidInjector;
+import dagger.android.support.DaggerApplication;
 
 /**
  * @author CE Chen
  */
-public class App extends Application {
+public class App extends DaggerApplication {
 
     private static App sApp;
 
@@ -125,5 +126,11 @@ public class App extends Application {
         JAnalyticsInterface.setDebugMode(false);
         JAnalyticsInterface.initCrashHandler(this);
         JAnalyticsInterface.init(this);
+    }
+
+    @Override
+    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+        return DaggerAppComponent.builder().application(this).build();
+//        return null;
     }
 }

@@ -2,7 +2,7 @@ package com.ce.cechat.utils;
 
 import android.text.TextUtils;
 
-import com.ce.cechat.model.bean.User;
+import com.ce.cechat.bean.User;
 import com.hyphenate.util.HanziToPinyin;
 
 import java.util.ArrayList;
